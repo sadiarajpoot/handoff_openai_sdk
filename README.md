@@ -1,5 +1,6 @@
 # 🤖 OpenAI Agent SDK - Handoff System for Billing and Refund Support
 
+## 🚀 handoff.py file 
 This project demonstrates a multi-agent system using the [OpenAI Agent SDK](https://platform.openai.com/docs/assistants/agents) with **handoff capabilities** between agents based on the user’s intent (Billing or Refund).
 
 ---
@@ -46,3 +47,26 @@ This project demonstrates a multi-agent system using the [OpenAI Agent SDK](http
 Order ID: 12345, Reason: incorrect charges
 📤OUTPUT: (final resolved message here)
 👨‍💼 LAST AGENT WHO HANDLED: billing_agent
+
+
+## 🚀 handoffproperties.py
+# 🤖 Multi-Agent Handoff System
+
+This project shows how to use OpenAI's Agents SDK to create a smart system that routes user queries to the right agent.
+
+---
+
+## 🔍 Features
+
+- 🧠 Manager agent handles all user inputs
+- 💳 Billing agent for billing issues
+- 💸 Refund agent for refund problems
+- 🔁 Smart handoff using `Handoff()` and input schema
+- ✅ Schema validation with Pydantic
+
+---
+
+## ▶️ Run the Project
+
+
+uv run handoffproperties.py

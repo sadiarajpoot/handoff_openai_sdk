@@ -11,7 +11,7 @@ handoff_Input=handoff_cls_Input(order_id=12345, reason="Product Damage")
 billing_agent=Agent(
     name="billing_agent",
     instructions="Your are a billing agent .Solve Quries related to billing and provide the solution",
-    handoff_description="you are a billing agent solve issues related to billing"
+    # handoff_description="you are a billing agent solve issues related to billing"
 )
 
 refund_agent=Agent(
@@ -47,6 +47,7 @@ handoff_func_refund=handoff(
 manager = Agent(
     name="main_agent",
     instructions="You handoff the agents when user asked about billing and refund problems",
+    handoff_description="sadia",
     handoffs=[handoff_func_billing,handoff_func_refund]
 )
 
