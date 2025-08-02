@@ -1,12 +1,33 @@
-# Python-generated files
+# 🔁 Bytecode and cache
 __pycache__/
-*.py[oc]
+*.py[co]
+
+# 🏗️ Build artifacts
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
 
-# Virtual environments
-.venv
-# Ignore environment variables
+# 🐍 Virtual environments
+.venv/
+env/
+ENV/
+venv/
+
+# 🔐 Secrets and environment variables
 .env
+.env.*
+
+
+
+# 💻 OS-specific files
+.DS_Store
+Thumbs.db
+
+# 📦 Package lock files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ⚙️ IDE/editor settings
+.vscode/
+.idea/
